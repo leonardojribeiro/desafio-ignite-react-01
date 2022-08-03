@@ -1,5 +1,6 @@
 import styles from './Todo.module.css';
 import { TodoForm } from './TodoForm';
+import { TodoItem } from './TodoItem';
 
 export function Todo() {
   return (
@@ -16,6 +17,28 @@ export function Todo() {
             <strong className={styles.todoCountBadge}>2 de 5</strong>
           </div>
         </div>
+        <ul>
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
+        </ul> 
       </div>
     </main>
   )

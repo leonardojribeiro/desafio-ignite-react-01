@@ -8,6 +8,10 @@
   width: 46.25rem;
 }
 
+.todoContainer ul{
+  list-style: none;
+}
+
 .todoCountContainer {
   margin-top: 4rem;
   display: flex;
