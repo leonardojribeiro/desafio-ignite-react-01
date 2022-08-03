@@ -1,0 +1,40 @@
+.todoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoContainer {
+  width: 46.25rem;
+}
+
+.todoCountContainer {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todoCountBadge {
+  background-color: var(--gray-400);
+  color: var(--gray-100);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px
+}
+
+.todoCountLeading {
+  color: var(--blue);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.todoCountTrailing {
+  color: var(--purple);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
