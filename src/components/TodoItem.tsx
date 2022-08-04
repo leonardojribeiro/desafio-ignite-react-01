@@ -32,11 +32,13 @@ export function TodoItem({ todo, onDelete, onStatusChange }: TodoItemProps) {
             onChange={handleStatusChange}
           />
         </div>
-        <p
-          className={todo.status === "completed" ? styles.todoItemDone : ''}
-        >{todo.description}</p>
+        <p className={todo.status === "completed" ? styles.todoItemDone : ''}>
+          {todo.description}
+        </p>
       </div>
-      <button type="button" onClick={handleDelete}><Trash size={16} /></button>
+      <button type="button" onClick={handleDelete}>
+        <Trash size={16} />
+      </button>
     </li>
   )
 }
