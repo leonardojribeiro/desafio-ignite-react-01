@@ -19,11 +19,13 @@
   box-sizing: border-box;
 }
 
-body{
-background: var(--gray-600)
+body {
+  background: var(--gray-600);
+  font-family: 'Inter', sans-serif;
+  line-height: 140%;
 }
 
-:focus{
+:focus {
   outline: transparent;
-  box-shadow:  0 0 0 1px var(--blue);
+  box-shadow: 0 0 0 1px var(--blue);
 }

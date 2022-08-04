@@ -5,23 +5,24 @@
   margin: 1rem 0;
   display: flex;
   gap: 1rem;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row; 
+  justify-content: space-between; 
+}
+.checkboxContainer{
+  display: block;
 }
 
 .todoItem input[type="checkbox"] {
   appearance: none;
-  -webkit-appearance: none;
-  margin: 0;
+  -webkit-appearance: none; 
   cursor: pointer;
   border-radius: 99px;
   border: none;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border: 1px solid var(--blue);
   display: grid;
-  place-content: center;
+  place-content: center; 
 }
 
 .todoItem input[type="checkbox"]:hover { 
@@ -31,13 +32,13 @@
 .todoItem input[type="checkbox"]::before {
   transform: scale(0);
   content: "";
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.7rem;
+  height: 0.7rem;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   transform-origin: bottom left;
   transition: 0.25s transform ease-in-out;
 }
-
+ 
 .todoItem input[type="checkbox"]:checked { 
   background-color: var(--blue); 
   border: 1px solid var(--purple-dark);
@@ -55,7 +56,8 @@
 
 .todoItem p{
   color: var(--gray-100);
-  transition: opacity 0.25s
+  transition: opacity 0.25s;
+  overflow-wrap: break-word;
 }
 
 .todoItemDone{
@@ -82,5 +84,5 @@
 .itemGroup{
   display: flex;
   gap: 1rem;
-  flex-direction: row;
+  flex-direction: row; 
 }

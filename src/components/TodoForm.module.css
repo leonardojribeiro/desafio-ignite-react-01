@@ -30,8 +30,16 @@
   cursor: pointer;
   color: var(--gray-100);
   transition: background 0.25s;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.todoForm button[type="submit"]:hover {
+.todoForm button[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
+.todoForm button[type="submit"]:hover:enabled {
   background: var(--blue);
 }
